@@ -1,4 +1,5 @@
 #!/bin/bash
+rm -rf /var/log/journal/*
 journalctl --rotate
 journalctl --vacuum-time=1s
 journalctl --vacuum-size=1M
